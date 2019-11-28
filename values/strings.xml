@@ -1,0 +1,18 @@
+<resources>
+    <!-- FOR PAGE 1 -->
+    <string name="app_name">APP</string>
+    <string name="tester_name">测试号</string>
+    <string name="test_number">Write here</string>
+    <string name="START">START</string>
+    <!-- FOR PAGE 1 -->
+    <string name="lock_time">11:10</string>
+    <string name="lock_date">11月29日(星期一)</string>
+    <!-- FOR WAIT PAGE -->
+    <string name="wait_text">请稍等3秒钟...</string>
+    <string name="image_name">img</string>
+
+    <string name="display_text">已复制到剪贴簿!</string>
+    <string name="ex_result"></string>
+    <string name="back_text">回主页</string>
+
+</resources>

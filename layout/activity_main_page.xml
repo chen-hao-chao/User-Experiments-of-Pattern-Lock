@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="266dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:text="@string/lock_time"
+                android:textSize="55dp"
+                tools:visibility="visible" />
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="@string/lock_date" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="38dp"
+            android:contentDescription="@string/image_name"
+            android:src="@drawable/deco"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="180dp">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon1" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon2" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon3" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon4" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:contentDescription="@string/image_name"
+        android:src="@drawable/bar"
+        android:visibility="visible" />
+
+</LinearLayout>
