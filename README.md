@@ -62,9 +62,9 @@ NOTE: 需改动code当中注释`// $$`的地方。
 6. 目标位置为随机产生，请随时留意，不要抢快，必须以正确率为前题。
 ```
 
-| 初始画面  | 输入错误图形 | 长压弹跳图案 |
-| -------- | -------- | --------- |
-|![](https://i.imgur.com/n4je25a.png)| ![](https://i.imgur.com/hjeOV5g.png) | ![](https://i.imgur.com/xLR1J55.jpg) |
+| 初始画面  | 输入错误图形 | 长压弹跳图案 | 正确图形锁 |
+| -------- | -------- | --------- | --------|
+|![](https://i.imgur.com/n4je25a.png)| ![](https://i.imgur.com/hjeOV5g.png) | ![](https://i.imgur.com/xLR1J55.jpg) |![](https://i.imgur.com/8ePq6FS.png)|
 
 
 | target app |
