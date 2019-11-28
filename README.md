@@ -61,3 +61,12 @@ NOTE: 需改动code当中注释`// $$`的地方。
 5. 第二阶段为实验页面，受试者者必须以长压来激活 app。
 6. 目标位置为随机产生，请随时留意，不要抢快，必须以正确率为前题。
 ```
+
+| 初始画面  | 输入错误图形 | 长压弹跳图案 |
+| -------- | -------- | --------- |
+|![](https://i.imgur.com/n4je25a.png)| ![](https://i.imgur.com/hjeOV5g.png) | ![](https://i.imgur.com/xLR1J55.jpg) |
+
+
+| target app |
+| ---------  |
+|![](https://i.imgur.com/jYS1kwY.png)|
