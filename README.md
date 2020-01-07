@@ -27,7 +27,7 @@ The input device is an Android phone, and mode 1 test of the experimental app is
 ```
 We will record the position of different apps (4 types in total), including different app positions (configuration 1 and 2 for 4 types, configuration 3 and 4 for 6 types), position of fingers' release(5 times), so the subject will undergo 4\*4\*5\*2+4\*6\*5\*2=400(times) at this stage. The experiment takes about 7 minutes.
 
-<img src="images/1.png" width="450">
+<img src="image/1.png" width="550">
 
 #### Experiment 2
 
@@ -46,7 +46,7 @@ The input device is an Android phone. Mode 2 of an experimental app had been use
 
 It will record the time required to open the pattern lock. A total of 10 times test under different pause time (a total of 6 types) will be conducted. The subject will go through 6\*10=60 tests and it takes about 4 minutes.
 
-<img src="images/2.png" width="450">
+<img src="image/2.png" width="550">
 
 #### Experiment 3
 
@@ -67,4 +67,4 @@ The input device is an Android phone. Mode 2 of an experimental app had been use
 
 It will record the time required to open the pattern lock (5 times) under different configurations (two general configurations, four experiments), different app positions (random), so the subject will experience 1\*4\*5+1\*6\*5+2\*4\*5+2\*6\*5=150 tests. The experiment takes about 8 minutes.
 
-<img src="images/3.png" width="450">
+<img src="image/3.png" width="550">
