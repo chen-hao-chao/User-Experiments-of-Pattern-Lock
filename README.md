@@ -1,43 +1,23 @@
 # User Experiments of Pattern Lock
 
-### 实验流程
-整体将分为三个子实验。
+## Introduction
+
+As people attach great importance to the safety of mobile devices, screen locks have become the first line of defense, and a variety of applications have emerged today. However, its use often results in a decrease in use efficiency. According to a survey conducted by Apple in 2016, users open their mobile phone about 80 times per day on average. The overhead caused by unlocking is very pretty heavy. Therefore, this project aims to minimize the time of unlocking and activate applications on smart phones. Three analyses of usage habits was performed. We came up with a one-step way to "unlock + activate the app" to reduce the operation time for users to select applications on the main page. Also, this concept is applicable. Whether it is pattern lock, as well as fingerprint and face recognition locks, can be applied to this setting. The following experiments will be conducted on android smart phones. We will discuss the experimental results and subject's behavior in detail in the following sections.
+
+## Method
+
+We have designed a set of experiments, including three sub-parts, which are aimed at landing habits, error rates, time did the corresponding test. The implementation details are shown below:
+
+- Recruitment of subjects: A total of 11 subjects were recruited in this experiment, 6 women and 5 men. All 11 subjects have used smart phones for more than 5 years. There are no discomforts in the hands, and the dominant hand is the right hand.
+- Experiment 1: The overall workflow is shown below. This experiment will evaluate the landing points of users. The experimental variables are the position of the target app and the layout of the bounce window after long pressure. The control amount is the pattern, the firing time, the app graphic size and the distance, and the dependent variable is its click position.
+- Implementation details: The input device is an Android phone, and mode 1 test of the experimental app is used[1]. The subject shall slide the thumb with his dominant thumb ock, and can be supported by another hand-held mobile phone on the back of the dominant hand. The followings will be informed before the experiment begins:
 ```
-实验一：测试使用者对图形的反应与落点。
-实验二：测试使用者对不同停顿时间的错误率。
-实验三：测试使用者对图形解锁的反应时间。
+1. In this experiment, you must slide the graphic lock with one hand, the pattern is 36987452 (Figure 4).
+2. In this experiment, when the fixed point (2) is reached, you must hold it for 0.5s, and a box will pop out.
+3. After the icon frame pops out, move your finger to the target pattern and release it.
+4. Please note that the target pattern will change its position every five times. It will not be timed. Please give priority to accuracy.
 ```
-
-#### 实验一
-控量：图形锁的样式(路径)、激发时间、app图形大小、距离。 <br>
-变量：target 位置、排版。 <br>
-依变量：使用者对该图形的落点。 <br>
-
->>依据不同的 target 位置我们可以拟合出最佳区域划分。 <br>
-
-:arrow_right: 执行流程：
-首先，进入到手机主页面，实验指导人请输入`test_1_($name)`，当中 name 可以是任何字串，用于命名实验。用户实验必须固定使用者**使用姿势**，实验指导人必须请受试者以**单手持手机**，并使用**惯用手拇指**滑动图形锁。在实验开始之前须告知受试者以下几点： <br>
-```
-1. 在此实验中必须以单手滑开图形锁，图案为36987452(以下图示说明)。
-2. 在此实验中当到达定点(2)时，必须手持不放维持 0.5s，会有图示框跳出。
-3. 图示框跳出后，将手指移至目标图案上放开。
-4. 请留意目标图案会每隔五次更换位置，不会计时，请以准确性为优先。
-```
-
-会记录不同配置(0,1,2,3)下，不同app 位置(0,1,2,3或0,1,2,3,4,5)，的手指放开位置(5次)数据，因此受试者会经历4\*4\*5\*2+4\*6\*5\*2=400 次测试。
-测试后数据会复制到剪贴簿，切记马上存下来。测试数据将如下展示：
-
-```
-5,10 11,321 -3,280 17,269 43,276 351,-12 250,7 219,9 274,7 291,-2 37,-323 39,-302 27,-279 39,-280 24,-296 -299,32 -272,23 -305,16 -240,5 -283,-19 248,252 325,244 266,222 255,223 301,268 191,-205 172,-226 202,-193 175,-215 171,-185 -183,-222 -162,-180 -231,-226 -234,-250 -266,-316 -210,325 -127,133 -106,140 -139,132 -132,159 81,322 42,261 66,254 14,266 26,287 514,236 367,250 418,211 474,201 427,250 232,-201 325,-157 281,-170 280,-191 225,-210 -14,-305 21,-360 -5,-334 21,-269 54,-284 -269,-193 -247,-227 -137,-133 -239,-202 -201,-177 -241,248 -270,228 -301,206 -247,200 -261,184 300,265 285,318 230,266 201,257 262,335 380,45 360,17 342,-5 344,17 372,31 126,-302 153,-240 149,-282 141,-289 152,-313 -251,-332 -191,-399 -190,-374 -211,-349 -199,-423 -352,39 -308,-14 -346,14 -341,-9 -308,-22 -173,229 -129,237 -131,247 -113,262 -107,206 
-```
-
-实验所需时间约 7 分钟，请受试者耐心做完实验！ <br>
-完成实验后，请将不同受试者的资料分别存储，建议格式： <br>
-($name)/test_1.txt <br>
-       /test_2.txt <br>
-       /test_3.txt <br>
-
----
+We will record the position of different apps (4 types in total), including different app positions (configuration 1 and 2 for 4 types, configuration 3 and 4 for 6 types), position of fingers' release(5 times), so the subject will undergo 4\*4\*5\*2+4\*6\*5\*2=400(times) at this stage. The experiment takes about 7 minutes.
 
 #### 实验二
 控量：图形锁的样式(路径)。 <br>
