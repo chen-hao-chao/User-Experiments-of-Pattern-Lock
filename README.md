@@ -19,12 +19,14 @@ The overall workflow is shown below. This experiment will evaluate the landing p
 #### Process and details
 
 The input device is an Android phone, and mode 1 test of the experimental app is used[1]. The subject shall slide the thumb with his dominant thumb ock, and can be supported by another hand-held mobile phone on the back of the dominant hand. The followings will be informed before the experiment begins:
+
 ```
 1. In this experiment, you must slide the graphic lock with one hand, the pattern is 36987452 (Figure 4).
 2. In this experiment, when the fixed point (2) is reached, you must hold it for 0.5s, and a box will pop out.
 3. After the icon frame pops out, move your finger to the target pattern and release it.
 4. Please note that the target pattern will change its position every five times. It will not be timed. Please give priority to accuracy.
 ```
+
 We will record the position of different apps (4 types in total), including different app positions (configuration 1 and 2 for 4 types, configuration 3 and 4 for 6 types), position of fingers' release(5 times), so the subject will undergo 4\*4\*5\*2+4\*6\*5\*2=400(times) at this stage. The experiment takes about 7 minutes.
 
 <img src="image/1.png" width="550">
@@ -35,7 +37,7 @@ The overall workflow is shown below. This experiment will evaluate the subject's
 
 #### Process and details
 
-The input device is an Android phone. Mode 2 of an experimental app had been used [1]. The subject shall slide over the screen with the thumb of his dominant thumb. It is allowed to use another hand to hold back. The following rules will be informed before the experiment begins:
+The input device is an Android phone. Mode 2 of an experimental app had been used [1]. The subject shall slide over the screen with the thumb of his dominant thumb. It is allowed to use another hand to hold back. The following notifications will be informed before the experiment begins:
 
 ```
 1. In this experiment, the lock must be opened with one hand, case 36987452.
@@ -54,7 +56,7 @@ The overall workflow is shown below. This experiment will compare the time requi
 
 #### Process and details
 
-The input device is an Android phone. Mode 2 of an experimental app had been used [1]. The subject shall open the pattern lock with the thumb of the dominant hand. It is allowed to use another hand to hold back. The following rules will be informed before the experiment begins:
+The input device is an Android phone. Mode 2 of an experimental app had been used [1]. The subject shall open the pattern lock with the thumb of the dominant hand. It is allowed to use another hand to hold back. The following notifications will be informed before the experiment begins:
 
 ```
 1. In this experiment, the pattern lock must be opened with one hand. (36987452).
@@ -68,3 +70,22 @@ The input device is an Android phone. Mode 2 of an experimental app had been use
 It will record the time required to open the pattern lock (5 times) under different configurations (two general configurations, four experiments), different app positions (random), so the subject will experience 1\*4\*5+1\*6\*5+2\*4\*5+2\*6\*5=150 tests. The experiment takes about 8 minutes.
 
 <img src="image/3.png" width="550">
+
+## Results
+
+In this section we will analyze the results of the three experiments and discuss their significance. First, we will infer the user's  habit by collecting coordinate points. The following figure shows the points (after removing the abnormal points) in the first experimental configuration (90 degrees, 0 degrees, -90 degrees, 180 degrees), and the red line in the distribution chart represents the Gaussian distribution and the purple is the actual distribution.
+
+<img src="image/4.png" width="550">
+
+<img src="image/5.png" width="550">
+
+From the data above, it is obvious that even if the graphics is the same in aspect of ratio, size, and distance, there is still an inaccurate click, and this distribution is closely related to the direction of finger movement. For the target position 1, the center point is located at (0, 200), but the average value falls at (-0.4906, 222.0566). Specifically, users tend to release their fingers north when they move the fingers upward.
+
+The difference in standard deviation also deserves to be analyzed. In the vertical axis of Table 1, the "x-coordinate standard deviation" can obviously be divided into two blocks. The first block is the part of the target position 1 and 3, Their standard deviations are 22.0391 and 18.8988 respectively; while the second block is the part of the target position 2 and 4, their standard deviations are 31.5921 and 28.0826 respectively. The experimental configurations 2 and 4 relying on the longitudinal movement of the finger have a large standard deviation in the x coordinate, and in a similar way, we can find that the experimental configurations 1 and 3 relying on the lateral movement of the finger appear in the y coordinate. This shows that when the user's dragging position is closely related to the movement direction, more precisely, the drop point will be greatly different in the x-axis direction when the finger is dragged horizontally, and the drop point will be in the y-axis when dragged vertically. The direction is quite different.
+
+Summarizing the above two points, there is inaccuracy even in the drag task, and such a point of inaccuracy is regular. The wrong position will deviate from the correct position in the direction of finger movement, and there will be a large standard deviation distribution in the direction of movement. This can be understood by the narrow distribution of the midpoints.
+
+<img src="image/6.png" width="550">
+
+<img src="image/7.png" width="550">
+
