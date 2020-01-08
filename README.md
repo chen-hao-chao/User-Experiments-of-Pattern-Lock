@@ -105,7 +105,7 @@ Due to the limitation of hands' movement, the points are more concentrated at ab
 
 On the second experiment, we are going to determin the intention of the users to long-press. This idea comes from the trade-off between efficiency and correctness. Too much the time to recognized as long-press makes it inefficient, while too less makes error rate arises. Hoping to find the balance point of the trade-off, we recorded the error rate while the subjects were trying to long-press. We had tried 0.100, 0.135, 0.170, 0.205, 0.240, 0.275 second respectively and the results are shown below:
 
-<img src="image/13.png" width="550">
+<img src="image/13.png" width="350">
 
 Obviously, 0.24 second is the knee point and we picked it as the time required for users' intention to long-press.
 
