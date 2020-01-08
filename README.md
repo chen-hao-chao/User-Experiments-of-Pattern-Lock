@@ -89,3 +89,29 @@ Summarizing the above two points, there is inaccuracy even in the drag task, and
 
 <img src="image/7.png" width="550">
 
+Similar phenomonon occured in the following experiments (3,4).
+
+<img src="image/8.png" width="550">
+
+<img src="image/9.png" width="550">
+
+<img src="image/10.png" width="550">
+
+<img src="image/11.png" width="550">
+
+Due to the limitation of hands' movement, the points are more concentrated at about -30 degree in the 6-way configurations. In addition, we compare the Eulidean distance between ground truth position and the drop point. In configureation 3, the distances are: *27.3790*、44.3147、46.1790、51.2296、*53.8679*、43.0804. In configuration 4, the distances are: 46.5546、41.0050、51.0400、*69.6366*、44.2386、*35.4826*. Astonishingly, some deviations are twice of the others, which reflects the habits of the users.
+
+<img src="image/12.png" width="550">
+
+On the second experiment, we are going to determin the intention of the users to long-press. This idea comes from the trade-off between efficiency and correctness. Too much the time to recognized as long-press makes it inefficient, while too less makes error rate arises. Hoping to find the balance point of the trade-off, we recorded the error rate while the subjects were trying to long-press. We had tried 0.100, 0.135, 0.170, 0.205, 0.240, 0.275 second respectively and the results are shown below:
+
+<img src="image/13.png" width="550">
+
+Obviously, 0.24 second is the knee point and we picked it as the time required for users' intention to long-press.
+
+On the thrid experiment, we are going to find out the required time for our method and usual method to unlock and activate apps. The graph below shows the difference:
+
+<img src="image/14.png" width="550">
+
+<img src="image/15.png" width="550">
+
