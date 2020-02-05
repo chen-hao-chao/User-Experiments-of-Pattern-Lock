@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Screen locks often bring about problems of decreasing efficiency since we might need to deal with complicated passwords as accessing our cellphones. According to a survey conducted by Apple in 2016, users open their mobile phone about 80 times per day on average. The overhead caused by unlocking is pretty heavy. This project aims to minimize the time of unlocking and activate applications on smart phones. Three analyses of using habits was conducted. We designed an one-step-way method of "unlocking and activating apps" to reduce the overheade to select applications on the main page. Also, this concept is applicable, and whatever it is pattern lock, fingerprint or face recognition locks can be applied to this setting. The following experiments will be conducted on android smart phones, and we will discuss the experimental results and subject's behavior in detail in the following sections.
+Screen locks often bring about problems about decreasing efficiency, since we might need to deal with complicated passwords as accessing our cellphones. According to a survey conducted by Apple in 2016, users open their mobile phone about 80 times per day on average. The overhead caused by unlocking is undesirable, and as a result, this project aims to minimize the unlocking time and design a faster approach to activate applications on smart phones. We conducted three analyses of user's habits and came upon an one-step-way method that people could unlock and activate apps on the main page without extra accessing and loading time. Also, this concept is applicable. Cellphones with a pattern lock, a fingerprint lock or a face recognition lock can be applied to this setting. We conducted the following experiments on android smart phones. Detailed discussion about the experimental results and subject's behavior is shown below.
 
 ## Method
 
@@ -10,7 +10,7 @@ We have designed a set of experiments, including three sub-parts, which are aime
 
 #### Recruitment of subjects
 
-A total of 11 subjects were recruited in this experiment, 6 women and 5 men. All 11 subjects have used smart phones for more than 5 years. There are no discomforts in the hands, and the dominant hand is the right hand.
+A total of 11 subjects were recruited, 6 women and 5 men. All 11 subjects have used smart phones for more than 5 years. There are no discomforts in the hands. They are all right-handed.
 
 #### Experiment 1
 
