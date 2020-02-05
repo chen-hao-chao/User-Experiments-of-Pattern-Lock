@@ -52,7 +52,7 @@ It will record the time required to open the pattern lock. 10-time tests with di
 
 #### Experiment 3
 
-We amis to compare the time difference to open a certain app between using our method and the usual way. The experimental variables are the mode after unlocking, the location of the target app, and the layout of the bounce window after long press. The controlled variables are the layout of the bounce window, the activating time, the size and distance of the the app icon. The dependent variable is the operation time.
+We aim to compare the time difference to open a certain app between using our method and the usual way. The experimental variables are the mode after unlocking, the location of the target app, and the layout of the bounce window after long press. The controlled variables are the layout of the bounce window, the activating time, the size and distance of the the app icon. The dependent variable is the operation time.
 
 #### Process and details
 
