@@ -6,7 +6,7 @@ Screen locks often bring about problems about decreasing efficiency, since we mi
 
 ## Method
 
-We have designed a set of experiments, including three sub-parts, which are aimed at landing habits, error rates, time did the corresponding test. The implementation details are shown below:
+We have designed a set of experiments, including three sub-parts, which are aimed at landing habits, error rates, time to finish the corresponding test. The implementation details are shown below:
 
 #### Recruitment of subjects
 
@@ -14,7 +14,7 @@ A total of 11 subjects were recruited, 6 women and 5 men. All 11 subjects have u
 
 #### Experiment 1
 
-This experiment will evaluate the landing points of the users. The experimental variables are the position of target apps and the layout of the bounce window after long pressuring. The control amount is the pattern, the firing time, the app graphic size and the distance, and the dependent variable is the landing position.
+This experiment will evaluate the landing points of the subjects. The experimental variables are the position of target apps and the layout of the bounce window after long pressing. The control amount is the pattern, the firing time, the app graphic size and the distance, and the dependent variable is the landing position.
 
 #### Process and details
 
@@ -73,7 +73,7 @@ It will record the time required to open the pattern lock (5 times) under differ
 
 ## Results
 
-In this section we will analyze the results of the three experiments and discuss their significance. First, we will infer the user's  habit by collecting coordinate points. The following figure shows the points (after removing the abnormal points) in the first experimental configuration (90 degrees, 0 degrees, -90 degrees, 180 degrees), and the red line in the distribution chart represents the Gaussian distribution and the purple is the actual distribution.
+In this section we will analyze the results of the three experiments and discuss their significance. First, we aim to analyze the user's  habit according to the coordinate points collected. The following figures show the points (after removing the abnormal points) on the first experimental setting (90 degrees, 0 degrees, -90 degrees, 180 degrees), and the red line in the distribution chart represents the Gaussian distribution while the purple bars are the actual distribution.
 
 <img src="image/4.png" width="550">
 
