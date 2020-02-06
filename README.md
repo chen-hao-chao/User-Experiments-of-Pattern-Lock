@@ -81,9 +81,9 @@ In this section we will analyze the results of the three experiments and discuss
 
 From the data above, we could see that even if the graphics is the same in aspect of ratio, size, and distance, there is still an inaccurate click, and this distribution is closely related to the direction of finger movement. For the target position 1, the center point is located at (0, 200), but the average value falls at (-0.4906, 222.0566). Specifically, users tend to release their fingers north when they move the fingers upward.
 
-The difference in standard deviation is also noteworthy. In the vertical axis of Table 1, the "x-coordinate standard deviation" can obviously be divided into two blocks. The first block is the part of the target position 1 and 3, Their standard deviations are 22.0391 and 18.8988 respectively; while the second block is the part of the target position 2 and 4, their standard deviations are 31.5921 and 28.0826 respectively. The experimental configurations 2 and 4 relying on the longitudinal movement of the finger have a large standard deviation in the x coordinate, and in a similar way, we can find that the experimental configurations 1 and 3 relying on the lateral movement of the finger appear in the y coordinate. This shows that when the user's dragging position is closely related to the movement direction, more precisely, the drop point will be greatly different in the x-axis direction when the finger is dragged horizontally, and the drop point will be in the y-axis when dragged vertically. The direction is quite different.
+The difference in standard deviation is also noteworthy. In the vertical axis of Table 1, the x-coordinate standard deviations can obviously be divided into two parts. The first block is the part of the target position 1 and 3, Their standard deviations are 22.0391 and 18.8988 respectively; while the second block is the part of the target position 2 and 4, their standard deviations are 31.5921 and 28.0826 respectively. The experimental configurations 2 and 4 relying on the longitudinal movement of fingers have large standard deviations in the x coordinate, and by the same token, we can find that the experimental configurations 1 and 3 relying on the lateral movement of fingers appear in the y coordinate. This shows that when the user's dragging position is closely related to the moving direction, more precisely, the landing point will be divergent in the x-axis direction as the finger moves horizontally, and similarly, the landing point will be in the y-axis as the finger moves vertically.
 
-Summarizing the above two points, there is inaccuracy even in the drag task, and such a point of inaccuracy is regular. The wrong position will deviate from the correct position in the direction of finger movement, and there will be a large standard deviation distribution in the direction of movement. This can be understood by the narrow distribution of the midpoints.
+To sum up, we found that deviation in the dragging task is colsely related to the moving direction of the finger. Also, there will be a large standard deviation in the direction of movement.
 
 <img src="image/6.png" width="550">
 
@@ -99,19 +99,24 @@ Similar phenomonon occured in the following experiments (3,4).
 
 <img src="image/11.png" width="550">
 
-Due to the limitation of hands' movement, the points are more concentrated at about -30 degree in the 6-way configurations. In addition, we compare the Eulidean distance between ground truth position and the drop point. In configureation 3, the distances are: *27.3790*、44.3147、46.1790、51.2296、*53.8679*、43.0804. In configuration 4, the distances are: 46.5546、41.0050、51.0400、*69.6366*、44.2386、*35.4826*. Astonishingly, some deviations are twice of the others, which reflects the habits of the users.
+Due to the limitation of hands' movement, the points are more dense at about -30 degree of the 6 configurations. In addition, we compared the Eulidean distance between ground truth positions and the landing points. In configureation 3, the distances are: *27.3790*、44.3147、46.1790、51.2296、*53.8679*、43.0804. In configuration 4, the distances are: 46.5546、41.0050、51.0400、*69.6366*、44.2386、*35.4826*. Astonishingly, some deviations are twice as the others.
 
 <img src="image/12.png" width="550">
 
-On the second experiment, we are going to determin the intention of the users to long-press. This idea comes from the trade-off between efficiency and correctness. Too much the time to recognized as long-press makes it inefficient, while too less makes error rate arises. Hoping to find the balance point of the trade-off, we recorded the error rate while the subjects were trying to long-press. We had tried 0.100, 0.135, 0.170, 0.205, 0.240, 0.275 second respectively and the results are shown below:
+On the second experiment, we are going to determine the intention to long press. This idea derived from the trade-off between efficiency and correctness. Too much the time to be recognized as a long-press makes it inefficient, while too less the time makes error rate arises. To strike a balance, we recorded the error rate while the subjects were trying to long press. We adopted 6 different thresholds--0.100, 0.135, 0.170, 0.205, 0.240, 0.275 second respectively--and the results are shown below:
 
 <img src="image/13.png" width="350">
 
-Obviously, 0.24 second is the knee point and we picked it as the time required for users' intention to long-press.
+Obviously, 0.24 second is the knee point and we picked it as the time required for users' intention for long pressing.
 
 On the thrid experiment, we are going to find out the required time for our method and usual method to unlock and activate apps. The graph below shows the difference:
 
 <img src="image/14.png" width="550">
 
+The differences in time (3.8%、3.3%、2.5%、1.7%) between the two settings are not significant. Further, we think the decreasing trend of the percentage of differences results from the familiarity toward the tasks. The subjects might get more adroit at the task with similar settings on the afterward experiments so they took less time on the tasks.
+
 <img src="image/15.png" width="550">
 
+## Conclusion
+
+We designed a set of experiments to help us understand users' behavior when it comes to pattern locks. Also, we conducted experiments on the landing points, responsive time and operation time. Although the outcomes indicated our failure on reducing operation time, those results could be useful in the field of one-hand operation.
