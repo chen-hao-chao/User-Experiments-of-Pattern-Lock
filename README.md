@@ -6,7 +6,7 @@ Screen locks often bring about problems about decreasing efficiency, since we mi
 
 ## Method
 
-We have designed a set of experiments, including three sub-parts, which are aimed at landing habits, error rates, time to finish the corresponding test. The implementation details are shown below:
+We designed a set of experiments, including three sub-parts, which are aimed at the landing habit, the error rate, the time to finish the corresponding test. The implementation details are shown below:
 
 #### Recruitment of subjects
 
@@ -18,7 +18,7 @@ This experiment will evaluate the landing points of the subjects. The experiment
 
 #### Process and details
 
-The subjects will be inform to use their dominant thumb to slide over the screen and can use the left hand as support to hold the cellphone. The followings will be informed before the experiment begins:
+The subjects will be informed to use their dominant thumb to slide over the screen and they are allowed to use the left hand as support to hold the cellphone. The followings will be informed before the experiment begins:
 
 ```
 1. The pattern is 36987452.
@@ -37,7 +37,7 @@ This experiment will evaluate the subject's intention to unlock by checking the 
 
 #### Process and details
 
-The subjects will be inform to use their dominant thumb to slide over the screen and can use the left hand as support to hold the cellphone. The followings will be informed before the experiment begins:
+The subjects will be informed to use their dominant thumb to slide over the screen and they are allowed to use the left hand as support to hold the cellphone. The followings will be informed before the experiment begins:
 
 ```
 1. The lock must be opened with one hand, case 36987452.
@@ -56,7 +56,7 @@ We aim to compare the time difference to open a certain app between using our me
 
 #### Process and details
 
-Similarly, the subjects will be inform to use their dominant thumb to slide over the screen and can use the left hand as support to hold the cellphone. The followings will be informed before the experiment begins:
+Similarly, the subjects will be informed to use their dominant thumb to slide over the screen and they are allowed to use the left hand as support to hold the cellphone. The followings will be informed before the experiment begins:
 
 ```
 1. The pattern lock must be opened with one hand. (36987452).
@@ -73,17 +73,21 @@ It will record the time required to open the pattern lock (5 times) under differ
 
 ## Results
 
-In this section we will analyze the results of the three experiments and discuss their significance. First, we aim to analyze the user's  habit according to the coordinate points collected. The following figures show the points (after removing the abnormal points) on the first experimental setting (90 degrees, 0 degrees, -90 degrees, 180 degrees), and the red line in the distribution chart represents the Gaussian distribution while the purple bars are the actual distribution.
+In this section we will analyze the results of the three experiments and discuss their significance.
+
+#### Experiment 1
+
+First, we aim to analyze the user's habits according to the coordinate points collected. The following figures show the points (after removing the abnormal points) on the first experimental setting (90 degrees, 0 degrees, -90 degrees, 180 degrees), and the red line in the distribution chart represents the Gaussian distribution while the purple bars represent the actual distribution.
 
 <img src="image/4.png" width="550">
 
 <img src="image/5.png" width="550">
 
-From the data above, we could see that even if the graphics is the same in aspect of ratio, size, and distance, there is still an inaccurate click, and this distribution is closely related to the direction of finger movement. For the target position 1, the center point is located at (0, 200), but the average value falls at (-0.4906, 222.0566). Specifically, users tend to release their fingers north when they move the fingers upward.
+From the table above, observation tells us that even if the graphics is the same in aspect of ratio, size, and distance, there is still an inaccurate click, and this distribution is closely related to the direction of finger movement. For the target position 1, the center point is located at (0, 200), but the average value falls at (-0.4906, 222.0566). That is, users tend to release their fingers north when they move the fingers upward.
 
-The difference in standard deviation is also noteworthy. In the vertical axis of Table 1, the x-coordinate standard deviations can obviously be divided into two parts. The first block is the part of the target position 1 and 3, Their standard deviations are 22.0391 and 18.8988 respectively; while the second block is the part of the target position 2 and 4, their standard deviations are 31.5921 and 28.0826 respectively. The experimental configurations 2 and 4 relying on the longitudinal movement of fingers have large standard deviations in the x coordinate, and by the same token, we can find that the experimental configurations 1 and 3 relying on the lateral movement of fingers appear in the y coordinate. This shows that when the user's dragging position is closely related to the moving direction, more precisely, the landing point will be divergent in the x-axis direction as the finger moves horizontally, and similarly, the landing point will be in the y-axis as the finger moves vertically.
+The difference in standard deviation is also noteworthy. In the vertical axis of Table 1, the x-coordinate standard deviations can obviously be divided into two parts. The first block is the part of the target position 1 and 3, Their standard deviations are 22.0391 and 18.8988 respectively; while the second block is the part of the target position 2 and 4, their standard deviations are 31.5921 and 28.0826 respectively. The experimental configurations 2 and 4 relying on the longitudinal movement of fingers yielded large standard deviations in the x coordinate, and by the same token, we can find that the experimental configurations 1 and 3 relying on the lateral movement of fingers yielded large standard deviations in the y coordinate. This shows that the user's dragging position is closely related to the moving direction, or more precisely, the landing point will be divergent in the x-axis direction as the finger moves horizontally, and similarly, the landing point will be in the y-axis as the finger moves vertically.
 
-To sum up, we found that deviation in the dragging task is colsely related to the moving direction of the finger. Also, there will be a large standard deviation in the direction of movement.
+To sum up, we found that deviation in the dragging task is closely related to the moving direction of the finger. Also, there will be a large standard deviation in the direction of movement.
 
 <img src="image/6.png" width="550">
 
@@ -99,24 +103,28 @@ Similar phenomonon occured in the following experiments (3,4).
 
 <img src="image/11.png" width="550">
 
-Due to the limitation of hands' movement, the points are more dense at about -30 degree of the 6 configurations. In addition, we compared the Eulidean distance between ground truth positions and the landing points. In configureation 3, the distances are: *27.3790*、44.3147、46.1790、51.2296、*53.8679*、43.0804. In configuration 4, the distances are: 46.5546、41.0050、51.0400、*69.6366*、44.2386、*35.4826*. Astonishingly, some deviations are twice as the others.
+Due to the limitation of hands' movement, the points are denser at about -30 degree of the 6 configurations. In addition, we compared the Eulidean distance between the ground truth positions and the landing points. In configuration 3, the distances are: *27.3790*、44.3147、46.1790、51.2296、*53.8679*、43.0804. In configuration 4, the distances are: 46.5546、41.0050、51.0400、*69.6366*、44.2386、*35.4826*. Astonishingly, some deviations are twice as the others, which also indicates that our finger movement follows a certain pattern by which we could trace or predict potential landing points. That could definitely help us to construct one-hand operation settings.
 
 <img src="image/12.png" width="550">
 
-On the second experiment, we are going to determine the intention to long press. This idea derived from the trade-off between efficiency and correctness. Too much the time to be recognized as a long-press makes it inefficient, while too less the time makes error rate arises. To strike a balance, we recorded the error rate while the subjects were trying to long press. We adopted 6 different thresholds--0.100, 0.135, 0.170, 0.205, 0.240, 0.275 second respectively--and the results are shown below:
+#### Experiment 2
+
+On the second experiment, we are going to determine the intention to long press. It is the trade-off between efficiency and correctness that makes this experiment indispensible, since too much the time to be recognized as a long-press makes the operation inefficient, while too less the time makes error rate incredibly high. To strike a balance, we recorded the error rate while the subjects were trying to long press. We adopted 6 different thresholds--0.100, 0.135, 0.170, 0.205, 0.240, 0.275 second respectively--and the results are shown below:
 
 <img src="image/13.png" width="350">
 
 Obviously, 0.24 second is the knee point and we picked it as the time required for users' intention for long pressing.
 
+#### Experiment 3
+
 On the thrid experiment, we are going to find out the required time for our method and usual method to unlock and activate apps. The graph below shows the difference:
 
 <img src="image/14.png" width="550">
 
-The differences in time (3.8%、3.3%、2.5%、1.7%) between the two settings are not significant. Further, we think the decreasing trend of the percentage of differences results from the familiarity toward the tasks. The subjects might get more adroit at the task with similar settings on the afterward experiments so they took less time on the tasks.
+The differences in time (3.8%、3.3%、2.5%、1.7%) between the two settings are not significant. Further, we think that the decreasing trend of the percentage of differences is, less or more, related to the subjects’ familiarity toward the tasks. The subjects might be more adroit at the task with similar settings on the afterward experiments so they took less time on the tasks.
 
 <img src="image/15.png" width="550">
 
 ## Conclusion
 
-We designed a set of experiments to help us understand users' behavior when it comes to pattern locks. Also, we conducted experiments on the landing points, responsive time and operation time. Although the outcomes indicated our failure on reducing operation time, those results could be useful in the field of one-hand operation.
+We designed a set of experiments to help us understand users' behavior on pattern locks. Also, we conducted experiments on landing points, responsive time and operation time. Although the outcomes indicated our failure on reducing the operation time, I believe those results could be useful in the study of one-hand operation.
